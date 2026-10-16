@@ -30,6 +30,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -40,61 +42,25 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global Continuous Integration and Continuous Delivery (CI/CD) and Automated Software Delivery market is estimated at approximately **$4.5B to $5.5B** in 2025–2026, expanding at a robust double-digit CAGR of 15–19%. The sector exhibits **moderate concentration with strong platform-consolidation dynamics**—hyperscalers and unified source-code forge ecosystems (Microsoft/GitHub Actions, AWS, GitLab, Atlassian) capture dominant market share through developer lock-in, while specialized delivery and modern orchestration vendors (Harness, CircleCI) maintain defensible niches around enterprise governance, hybrid infrastructure, and advanced pipeline intelligence.
+
+
+
 ## SaaS/Hosted Platforms
 
-
-
-- **GitHub Actions**  
-
-  CI/CD integrated directly into GitHub. Features **matrix builds**, **reusable workflows**, and **2,000+ marketplace actions**. Free minutes for public repos and generous free tier for private repos. **The most accessible CI/CD for open-source and GitHub-centric teams.**
-
-
-
-- **GitLab CI/CD**  
-
-  Fully integrated DevOps platform with **built-in CI/CD**, **Auto DevOps**, and **review apps**. Features **DAG pipelines**, **multi-project pipelines**, and **security scanning**. **The most complete single-platform DevOps experience.**
-
-
-
-- **CircleCI**  
-
-  Cloud-native CI/CD with **fast container-based builds**, **orb ecosystem**, and **test splitting**. Features **Docker layer caching** and **SSH debugging**.
-
-
-
-- **Bitbucket Pipelines**  
-
-  CI/CD integrated into Bitbucket Cloud. Features **configuration-as-code** via `bitbucket-pipelines.yml`, **Pipes marketplace**, and **deployment environments**.
-
-
-
-- **TeamCity Cloud**  
-
-  JetBrains' CI/CD platform with **Kotlin DSL for pipeline-as-code**, **test intelligence**, and **parallel builds**. Features **integration with JetBrains IDEs**.
-
-
-
-- **Travis CI**  
-
-  The original cloud CI for open source. Features **simple YAML configuration** and **language-specific build environments**.
-
-
-
-- **Azure Pipelines**  
-
-  Microsoft's CI/CD service with **YAML pipelines**, **multi-stage deployments**, and **integration with Azure DevOps**. Features **hosted and self-hosted agents**.
-
-
-
-- **Harness**  
-
-  Modern CI/CD platform with **AI-powered test intelligence**, **feature flags**, and **cloud cost management**. Features **GitOps** and **pipeline-as-code**.
-
-
-
-- **AWS CodePipeline**  
-
-  Fully managed CI/CD service on AWS. Features **integration with CodeBuild, CodeDeploy, and CodeCommit**, plus **third-party integrations**.
+| Platform | Parent Company / Developer | Company Scale (Valuation / Revenue) | Starting Paid Tier Pricing | Free Tier / Trial Limits | Key Features & Focus |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **AWS CodePipeline** | Amazon (AWS) | **$2.2T+ Market Cap** (~$105B+ AWS annual run-rate) | **$1.00 / active pipeline / month** (V1) or pay-per-action-minute (V2) | **1 free active pipeline/month** (V1) or **100 free action execution minutes/month** (V2) across the AWS account | Managed pipeline orchestration deeply integrated with AWS CodeBuild, CodeDeploy, S3, and ECS/EKS. |
+| **Azure Pipelines** | Microsoft | **$3.1T+ Market Cap** (~$245B+ annual revenue) | **$40 / month** per additional Microsoft-hosted parallel job ($15/mo for self-hosted) | **1 free Microsoft-hosted parallel job** (1,800 min/mo, max 60 min/job) + **1 free self-hosted parallel job** (unlimited mins) for up to 5 users | Multi-platform cloud/on-prem CI/CD with native Azure DevOps integration and matrix builds across OS runners. |
+| **GitHub Actions** | Microsoft (GitHub) | **$3.1T+ Market Cap** (GitHub ARR: ~$1B–$2B) | **$4.00 / user / month** (GitHub Team tier) | **2,000 build minutes/month** for private repos (unlimited for public open-source repos) + 500 MB artifact storage | Native GitHub workflow orchestration with 2,000+ Marketplace Actions, matrix jobs, and reusable workflows. |
+| **Bitbucket Pipelines** | Atlassian | **~$45B Market Cap** (~$4.4B annual revenue) | **$3.00 / user / month** (Bitbucket Standard tier, includes 2,500 mins/mo) | **50 build minutes/month** pooled per workspace, up to 5 users, 1 GB storage, max 10 concurrent steps | Integrated Bitbucket Cloud pipelines configured via `bitbucket-pipelines.yml` with native Jira and deployment tracking. |
+| **GitLab CI/CD** | GitLab Inc. (NASDAQ: GTLB) | **~$8B–$9B Market Cap** (~$700M+ annual ARR) | **$29.00 / user / month** (GitLab Premium tier) | **400 compute minutes/month** on shared runners, max 5 users per private top-level namespace, 10 GiB storage | All-in-one DevSecOps platform featuring Auto DevOps, DAG pipelines, review apps, and container registry. |
+| **Harness** | Harness Inc. | **$5.5B Valuation** (Series E; ~$250M ARR) | **Custom per-developer license** (~Essentials tier quote) + compute consumption | **Free Forever Tier**: 1,000 to 2,000 free cloud build credits/month, GitOps & CI modules, community support | AI-driven test intelligence, automated pipeline rollbacks, cloud cost management, and native GitOps engine. |
+| **CircleCI** | Circle Internet Services | **$1.7B Valuation** (Series F; ~$55.7M ARR) | **$15.00 / month** (CircleCI Performance plan) | **30,000 free credits/month** (~3,000 build minutes on standard Linux runner), up to 5 users, 30 concurrent jobs | High-speed container builds, Orb ecosystem, Docker layer caching, test splitting, and SSH debug access. |
+| **TeamCity Cloud** | JetBrains | **Private / Bootstrapped** (~$710M annual revenue) | **$45.00 / month** for first 3 committers (+$15/committer/month, includes 24,000 build credits) | **14-day free trial** with 12,000 build credits and 120 GB storage *(On-prem Professional edition: Free forever with 3 build agents & 100 configurations)* | JetBrains-integrated CI/CD engine featuring Kotlin DSL pipeline-as-code and smart parallel test execution. |
+| **Travis CI** | Idera, Inc. | **~$1.1B+ Parent Valuation** (Idera revenue ~$345M; Travis CI standalone ~$5M–$10M) | **$69.00 / month** (Core 1-concurrent job plan) | **14-day free trial** with 10,000 build credits (~1,000 Linux build minutes) for up to unlimited users *(Free credits upon request for OSS)* | Established cloud CI with straightforward YAML syntax and multi-language pre-configured build environments. |
 
 
 
