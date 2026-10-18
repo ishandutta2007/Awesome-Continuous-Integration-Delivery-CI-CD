@@ -157,3 +157,5 @@ If you found this curated CI/CD ecosystem guide helpful:
   <b>Built for Platform Engineers, DevOps Practitioners, and SRE Teams.</b><br>
   Let's make Continuous Integration &amp; Continuous Delivery faster, more observable, and cloud-native.
 </p>
+# Awesome-Continuous-Integration-Delivery-CI-CD
+
